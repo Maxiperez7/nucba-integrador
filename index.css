@@ -1,0 +1,311 @@
+/*@font-face{
+   familia tipográfica: 'Josefin Sans', sans-serif;
+    familia tipográfica: 'Pacífico', cursiva;
+    familia de fuentes: 'Square Peg', cursiva;
+}*/
+.body{
+    margin:0;
+    background-color:#030508 ;
+    position:relative;
+    padding-bottom:3em ;
+    min-height:100vh;
+}
+/************** heather-nav************/
+*{
+}
+.container-logo{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 1%
+}
+
+.imagen-logo{
+    width: 85px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    background-color:#030508 ;
+}
+.nombre-header{
+    color: #999c9f;
+    font-size: 3em;
+    margin: 0
+}
+
+.nav-opciones{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-lista{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0;
+    margin:0;
+}
+
+a{
+    color: #999c9f;
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    
+}
+
+/*---------------------------------------------------*/
+
+.box-presentacion{
+    background-image: url("imagenes/fondocomida.jpg");
+   background-size: cover;
+   
+   
+}
+.box-presentacion{
+    
+}
+
+.box-descripcion{
+    
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 10%;
+    padding-right: 50%;
+}
+h1{
+    font-family: 'Square Peg', cursiva;
+    color: #999c9f;
+    font-size: 5em;
+}
+.descripcion p{
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    color: #999c9f;
+}
+
+
+.buttons{
+    display: flex;
+}
+
+.button{
+    margin: 20px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: #999c9f;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+
+
+.boton.uno:hover{
+    background-color: #cc1010;
+}
+
+
+
+.division{
+    width: 80%;
+    color: #999c9f; 
+}
+
+.recetario{
+    margin-top: 5%;
+}
+.recetario *{
+    box-sizing: border-box;
+    
+}
+.titulo2{
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulo2 h2{
+    color: #999c9f;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    letter-spacing: 6px;
+    
+}
+.titulo2 p{
+    color: #999c9f;
+    display: flex;
+    justify-content: center; 
+    font-size: 1.5em;  
+}
+.container-imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    justify-content: flex-center;
+    
+}
+
+.lista-imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    flex:25%;
+    justify-content: space-around;
+    justify-content: flex-center;
+}
+.tarjeta{
+    margin:25px;
+    padding: 25px;
+    border: 1px solid #353434;
+    border-radius: 5%;
+    flex:10%;
+    
+
+}
+
+
+.nombre-plato{
+    color: #999c9f;
+    display: flex;
+    justify-content: center;
+    
+}
+.nombre-plato p{
+    justify-content: center;
+}
+
+.recetario img{
+    width: 200px;
+    height: 200px;
+    
+}
+
+
+.container-contacto{
+    
+}
+
+
+
+.titulo3 h2{
+    color: #999c9f;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    letter-spacing: 6px;
+    
+}
+.column {
+    color: #999c9f;
+}
+.row{
+    display: flex;
+}
+
+footer{
+    background-color: #353434;
+    padding: 40px;
+   
+}
+.titulo3{
+    display:flex;
+    justify-content: center;
+    
+}
+
+footer img{
+      
+    width: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-contenido{
+  background-color:rgb(48, 77, 105);
+  width:600px;
+  height: 300PX;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+#miModal:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.modal2-contenido{
+    background-color:rgb(48, 77, 105);
+    width:600px;
+    height: 600PX;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: RELATIVE;
+  }
+  .modal2{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+  #miModal2:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+
+
+@media (max-width: 900px){
+    .column{
+        flex: 80%;
+    }
+    .container-imagenes img{
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+    .container-imagenes img{
+        width: 100%;
+        
+    }
+}
